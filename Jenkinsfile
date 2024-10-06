@@ -4,7 +4,7 @@ pipeline {
         stage('Which Branch Am I In') {
             steps {
                 script {
-                    echo "I'm in branch ${BRANCH_NAME}"
+                    echo "I'm in anbvbranch ${BRANCH_NAME}"
                 }
             }
         }
