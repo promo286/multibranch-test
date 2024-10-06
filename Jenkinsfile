@@ -1,8 +1,12 @@
-pipeline{
-  agent any 
-  stages {
-    stage('which branch im in ') {
-      echo " im in branch {BRANCH_NAME}"
+pipeline {
+    agent any
+    stages {
+        stage('Which Branch Am I In') {
+            steps {
+                script {
+                    echo "I'm in branch ${BRANCH_NAME}"
+                }
+            }
+        }
     }
-  }
 }
